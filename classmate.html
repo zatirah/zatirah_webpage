@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Classmates</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a73e8, #4caf50);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+	
+	.background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        }
+
+    header {
+      margin-bottom: 0px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-top: 15px;
+      letter-spacing: 1px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 0px;
+      color: #ddd;
+    }
+
+    .outer-container {
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .inner-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .classmate-card {
+      flex: 1 1 calc(50% - 10px); 
+      background: transparent;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      position: relative;
+      transform: scale(1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .classmate-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .classmate-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: none;
+      display: block;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+	
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Classmates</h1>
+    <p>A tribute to the wonderful people who made my studies unforgettable.</p>
+  </header>
+
+  <div class="outer-container">
+    <div class="inner-container">
+      <div class="classmate-card">
+        <img src="kelas1.jpg" alt="Classmate 1">
+      </div>
+      <div class="classmate-card">
+        <img src="kelas2.jpg" alt="Classmate 2">
+      </div>
+	  
+    </div>
+
+    <div class="description">
+      These classmates made my diploma life exciting and full of challenges.
+    </div>
+	
+	<video class="background-video" autoplay muted loop>
+        <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <footer>
+    © 2024 My Classmates. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #f8f9fa, #dee2e6);
+            color: #212529;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .main-container {
+            width: 80%;
+            max-width: 1200px;
+            height: 80%;
+            border-radius: 20px;
+            background-color: #eee6f2;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .banner {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #343a40;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .profile-picture {
+            flex: 1;
+            max-width: 250px;
+            text-align: center;
+            margin-right: 100px;
+        }
+
+        .profile-picture img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            border: 5px solid #adb5bd;
+            object-fit: cover;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-left: 90px;
+        }
+
+        .profile-picture img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .biodata-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .biodata-details p {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .biodata-details strong {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #495057;
+        }
+
+        .contact-me {
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-me a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #0033;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-me a:hover {
+            background-color: #fff;
+        }
+
+        .contact-me a img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .about-me {
+            margin-top: 30px;
+            border-radius: 15px;
+            background: #f1f3f5;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-me h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #495057;
+            text-transform: uppercase;
+        }
+
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #343a40;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 14px;
+            text-align: center;
+            color: #868e96;
+        }
+
+        .footer span {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 15px;
+            right: 30px;
+        }
+		
+		.back-button {
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+        }
+		
+        .next-button a {
+            text-decoration: none;
+        }
+		
+		.back-button a {
+            text-decoration: none;
+        }
+
+		.back-button button {
+            padding: 10px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #8c8483;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+		
+        .next-button button {
+            padding: 10px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #8c8483;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-button button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay muted loop>
+      <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+
+    <div class="main-container">
+        <header class="banner">
+            My Biodata
+        </header>
+
+        <div class="top-section">
+            <div class="profile-picture">
+                <img src="zz3.jpg" alt="Profile Picture">
+            </div>
+
+            <div class="biodata-details">
+                <p><strong>Name:</strong> Nurzatirah binti Zailan</p>
+                <p><strong>Age:</strong> 20 years old</p>
+                <p><strong>Birth of Date:</strong> 23/03/2004</p>
+                <p><strong>Hometown:</strong> Banting, Selangor</p>
+				<p><strong>Contact Me:</strong></p>
+                <div class="contact-me">
+                    <a href="https://instagram.com/zatirahhh" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com/zatirahhh" target="_blank">
+                        <img src="twitter.png" alt="twitter">
+                    </a>
+                    <a href="mailto:zatirah14@gmail.com">
+                        <img src="mail.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>
+                Explore more in my website to know me more!
+            </p>
+        </div>
+
+        <footer class="footer">
+            © 2024 <span>zz</span>. All Rights Reserved.
+        </footer>
+
+		<div class="global-button back-button">
+        <a href="index.html">
+            <button>Back</button>
+        </a>
+    </div>
+        <div class="next-button">
+            <a href="favfood.html">
+                <button>Next</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Class Experience</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f8f6;
+            margin: 0;
+            padding: 0;
+        }
+		.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+        header {
+            background-color: #3a045c;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #eee6f2;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        img {
+            max-width: 25%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #3a045c;
+            color: #f8f9fa;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My First Class Experience</h1>
+    </header>
+
+    <div class="content">
+        <h2>First Class Moments</h2>
+        
+		<video class="background-video" autoplay muted loop>
+        <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+	
+        <div class="image-container">
+            <img src="firstclass.jpg" alt="First Class Experience">
+            <img src="firstclass1.jpg" alt="Classroom Environment">
+        </div>
+
+        <p>Attending my first class at university was an unforgettable experience. It was filled with new faces, ideas, and excitement. I was eager to learn, make connections, and immerse myself in academic life.</p>
+        
+        <h3>Highlights from My First Class:</h3>
+        <ul>
+            <li>Met my first lecturer and classmates.</li>
+            <li>Attended an interesting lecture.</li>
+            <li>Had my first group discussion with new friends.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My University Journey. All rights reserved.</p>
+    </footer>
+</body>
+</html>

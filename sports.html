@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby - Badminton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+        }
+		
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 40px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 1400px;
+            padding: 30px;
+            flex-wrap: wrap; 
+            text-align: center;
+        }
+
+        .image-container {
+            width: 500px;
+            height: 480px;
+            background-color: #eee6f2;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 15px;
+        }
+
+        .video-container {
+            width: 700px; 
+            background-color: #eee6f2;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 50px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .global-button {
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+        }
+
+        .global-button button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #8c8483;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .global-button button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #3a045c;
+            color: #f8f9fa;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image-container">
+            <img src="badminton.jpg" alt="I am playing badminton">
+            <div class="description">
+                <p>This is me and my friend winning 3rd place in Rembau Badminton Championship in 2023</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="vidbadminton.mp4" type="video/mp4">
+            </video>
+            <div class="description">
+                <p>Here is a short video of me playing badminton with my classmates</p>
+            </div>
+        </div>
+    </div>
+
+	<video class="background-video" autoplay muted loop>
+      <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+
+    <div class="global-button back-button">
+        <a href="ilove.html">
+            <button>Back</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 My Hobby | Created with passion and enthusiasm!</p>
+    </footer>
+
+</body>
+</html>

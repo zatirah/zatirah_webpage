@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dean's Award</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+	
+	.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+    header {
+      background: #3a045c;
+      color: white;
+      width: 100%;
+      padding: 15px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    header hr {
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      border: none;
+      margin: 10px auto;
+    }
+
+    header p {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+
+    .content {
+      max-width: 800px;
+      width: 90%;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #eee6f2;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about {
+      font-size: 1em;
+      line-height: 1.5;
+      max-width: 800px;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      max-width: 220px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #3a045c;
+      color: #f8f9fa;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      position: static;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dean's Award</h1>
+    <hr>
+    <p>A Prestigious Recognition for Academic Excellence</p>
+  </header>
+
+  <div class="content">
+    <div class="about">
+      <p>
+        The Dean's Award is given to students who have achieved outstanding academic performance throughout their studies. I was fortunate to receive this honor for my consistent excellence, achieving the Dean's List status for four consecutive semesters. Below is a gallery of images capturing the essence of this prestigious award.
+      </p>
+    </div>
+
+	<video class="background-video" autoplay muted loop>
+        <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+	
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="dean1.jpg" alt="Dean's Award Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="dean3.jpg" alt="Dean's Award Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="dean2.jpg" alt="Dean's Award Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="dekan4.jpg" alt="Dean's Award Image 4">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Dean's Award. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

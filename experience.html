@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Experience</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      background: #3a045c;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin: 10px 0;
+      font-weight: 300;
+    }
+
+    .popular {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .popular h2 {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #eee6f2;
+      color: #333;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .card-content h3 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #3a045c;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <video class="background-video" autoplay muted loop>
+    <source src="backgroundweb.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>My Experience</h1>
+    <p>Discover the highlights of my experience in internship</p>
+  </header>
+
+  <section class="popular" id="journey">
+    <h2>Highlights of My Internship</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="ex1.jpg" alt="Experience 1">
+        <div class="card-content">
+          <h3>Task Completion</h3>
+          <p>Task that I need to complete as part of my internship journey.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ex2.jpg" alt="Experience 2">
+        <div class="card-content">
+          <h3>Team Collaboration</h3>
+          <p>My fellow friends and teammates during the internship.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ex3.jpg" alt="Experience 3">
+        <div class="card-content">
+          <h3>Farewell Moment</h3>
+          <p>Last day with staff in my department, a memorable goodbye.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Zatirah. All rights reserved.</p>
+  </footer>
+</body>
+</html>

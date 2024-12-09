@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player and Instrumental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+		
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 40px;
+            flex-direction: row;
+        }
+
+        .music-player, .image-container {
+            width: 330px;
+            background-color: #eee6f2;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .music-player .album-cover, 
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .song-details {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .song-details h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+
+        .song-details p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .global-button {
+            position: fixed;
+            bottom: 50px;
+            left: 20px; 
+        }
+
+        .global-button button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #8c8483;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .global-button button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #3a045c;
+            color: #f8f9fa;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="music-player">
+            <img class="album-cover" src="mcr.jpg" alt="Album Cover">
+            <div class="song-details">
+                <h3>Cancer</h3>
+                <p>My Chemical Romance</p>
+            </div>
+          
+            <audio controls>
+                <source src="My Chemical Romance - Cancer.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="image-container">
+            <img src="instrumental.jpg" alt="Instrumental Album Cover">
+            
+            <div class="description">
+                <p>I love instrumental</p>
+            </div>
+        </div>
+    </div>
+
+	<video class="background-video" autoplay muted loop>
+      <source src="backgroundweb.mp4" type="video/mp4">
+    </video>
+
+	<div class="global-button back-button">
+        <a href="ilove.html">
+            <button>Back</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 Things I love | Created by zz</p>
+    </footer>
+
+</body>
+</html>
+
+

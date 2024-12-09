@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diploma in Information Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: white;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    header hr {
+      width: 60%;
+      height: 4px;
+      background-color: #7c04c7;
+      border: none;
+      margin: 20px auto;
+    }
+
+    header p {
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: #7c04c7;
+      border: #7c04c7;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10 10px 10px rgba(0, 0, 0, 5);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .description {
+      display: inline-block;
+      font-size: 1.2em;
+      color: white;
+      background-color: #7c04c7;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .description:hover {
+      background-color: #7c04c7;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 70px;
+      font-size: 1em;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <video class="background-video" autoplay muted loop>
+    <source src="backgroundweb.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Diploma in Information Management</h1>
+    <hr>
+    <p>After completing high school at SAMTTAR with an achievement of 4As in SPM, I pursued my studies at UiTM Rembau, majoring in Information Management. Despite finding many subjects challenging throughout my diploma, with God's grace, I managed to maintain a Dean's List standing for four consecutive semesters.</p>
+  </header>
+
+  <div class="container">
+    <div>
+      <div class="box">
+        <img src="uitm.jpg" alt="UiTM Rembau">
+      </div>
+      <a href="uitm.html" class="description">UiTM Rembau</a>
+    </div>
+    <div>
+      <div class="box">
+        <img src="classmate.jpg" alt="Classmates">
+      </div>
+      <a href="classmate.html" class="description">Meet my classmates</a>
+    </div>
+    <div>
+      <div class="box">
+        <img src="dean2.jpg" alt="Dean's Award">
+      </div>
+      <a href="dekan.html" class="description">See my Dean's Award</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2024 Diploma in Information Management. All rights reserved.
+  </footer>
+</body>
+</html>
